@@ -1,192 +1,96 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nidmegent Esports</title>
+<title>NIDMEGENT</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
 </head>
-<body>
 
-<!-- Loading -->
+<body>
 
 <div id="loader">
 
 <h1>NIDMEGENT</h1>
 
-<div class="progress">
-<div class="bar"></div>
-</div>
-
-<p id="loadingText">Connecting...</p>
+<div class="progress"></div>
 
 </div>
 
-<!-- Particle Background -->
-
-<div id="particles-js"></div>
-
-<!-- Navbar -->
+<div class="cursor"></div>
 
 <header>
 
 <div class="logo">
+
 NIDMEGENT
+
 </div>
 
 <nav>
 
-<a href="#about">ABOUT</a>
-<a href="#division">DIVISION</a>
-<a href="#members">MEMBERS</a>
-<a href="#news">NEWS</a>
-<a href="#contact">CONTACT</a>
+<a href="#">ABOUT</a>
+
+<a href="#">DIVISION</a>
+
+<a href="#">PLAYERS</a>
+
+<a href="#">NEWS</a>
+
+<a href="#">CONTACT</a>
 
 </nav>
 
 </header>
 
-<!-- Hero -->
-
 <section class="hero">
 
-<video autoplay muted loop playsinline id="heroVideo">
-    <source src="assets/hero-video.mp4" type="video/mp4">
+<video autoplay muted loop playsinline>
+
+<source src="assets/video/hero.mp4" type="video/mp4">
+
 </video>
 
-<div class="hero-overlay"></div>
+<div class="overlay"></div>
 
 <div class="hero-content">
 
-<span class="subtitle">
-NIDMEGENT ESPORTS
-</span>
-
 <h1>
-PLAY<br>
-BEYOND<br>
-LIMITS
+
+WE BUILD<br>
+
+THE NEXT<br>
+
+GENERATION
+
 </h1>
 
-<p>
-Competitive Gaming Organization
-</p>
+<p>ESPORTS TEAM / KYOTO</p>
 
-<a href="#about" class="btn">
-EXPLORE
-</a>
+</div>
+
+<div class="scroll">
+
+SCROLL
 
 </div>
 
 </section>
-
-<!-- About -->
-
-<div class="big-text">
-NIDMEGENT
-</div>
-
-<section id="about" class="fade">
-
-<h2>WHO WE ARE</h2>
-
-<p>
-Nidmegent Esportsは、
-競技シーンへの挑戦と
-コミュニティの発展を目指す
-eスポーツチームです。
-</p>
-
-</section>
-
-<!-- Division -->
-
-<section id="division" class="fade">
-
-<h2>DIVISIONS</h2>
-
-<div class="cards">
-
-<div class="card">
-VALORANT
-</div>
-
-<div class="card">
-APEX LEGENDS
-</div>
-
-<div class="card">
-CREATORS
-</div>
-
-</div>
-
-</section>
-
-<!-- Members -->
-
-<section id="members" class="fade">
-
-<h2>MEMBERS</h2>
-
-<div class="cards">
-
-<div class="card">
-Captain
-</div>
-
-<div class="card">
-Player
-</div>
-
-<div class="card">
-Streamer
-</div>
-
-</div>
-
-</section>
-
-<!-- News -->
-
-<section id="news" class="fade">
-
-<h2>NEWS</h2>
-
-<div class="news-item">
-2026.06.24 WEBSITE RENEWAL
-</div>
-
-<div class="news-item">
-2026.06.20 NEW ROSTER ANNOUNCEMENT
-</div>
-
-</section>
-
-<!-- Contact -->
-
-<section id="contact" class="fade">
-
-<h2>CONTACT</h2>
-
-<a href="#" class="btn">
-DISCORD
-</a>
-
-</section>
-
-<footer>
-
-© 2026 Nidmegent Esports
-
-</footer>
 
 <script src="script.js"></script>
 

@@ -1,46 +1,73 @@
-// Loading
+// Loader
 
-window.addEventListener("load",()=>{
+window.onload=()=>{
 
 setTimeout(()=>{
 
-document.getElementById("loader").style.display="none";
+gsap.to("#loader",{
 
-},3000);
+opacity:0,
 
-});
+duration:1,
 
-// Scroll Animation
+onComplete(){
 
-const fades=document.querySelectorAll(".fade");
-
-window.addEventListener("scroll",()=>{
-
-fades.forEach(item=>{
-
-const top=item.getBoundingClientRect().top;
-
-if(top<window.innerHeight-100){
-
-item.classList.add("show");
+document.getElementById("loader").style.display="none"
 
 }
 
-});
+})
 
-});
+},2000)
 
-// Particles
-
-particlesJS("particles-js",{
-
-particles:{
-number:{value:80},
-color:{value:"#00aaff"},
-shape:{type:"circle"},
-opacity:{value:0.5},
-size:{value:3},
-move:{speed:2}
 }
 
-});
+// Cursor
+
+const cursor=document.querySelector(".cursor");
+
+document.addEventListener("mousemove",(e)=>{
+
+cursor.style.left=e.clientX+"px";
+
+cursor.style.top=e.clientY+"px";
+
+})
+
+// Lenis
+
+const lenis=new Lenis()
+
+function raf(time){
+
+lenis.raf(time)
+
+requestAnimationFrame(raf)
+
+}
+
+requestAnimationFrame(raf)
+
+// Hero Animation
+
+gsap.from(".hero h1",{
+
+y:100,
+
+opacity:0,
+
+duration:1.5,
+
+delay:2
+
+})
+
+gsap.from(".hero p",{
+
+opacity:0,
+
+y:50,
+
+delay:2.4
+
+})

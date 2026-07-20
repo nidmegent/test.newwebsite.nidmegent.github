@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 // Loader
 
 window.onload=()=>{
